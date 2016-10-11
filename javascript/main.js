@@ -2,12 +2,11 @@
 let categories = [];
 let products = [];
 let types = [];
-let newArray = [];
 let $output = $('#output');
 let $dropDown = $('#dropdown');
 let dropDownString = "";
-let productString = "";
-// this makes sure everythign has been loaded before it runs any code
+
+
 $(document).ready(() => {
 
     function populateDropdown(data) {
@@ -81,20 +80,15 @@ $(document).ready(() => {
 
     getCategories().then((dataPass)  => {
         categories = dataPass;
-        console.log("categories", categories);
         populateDropdown(categories);
         onChangeListener();
     });
 
     getProducts().then((dataPass)  => {
         products = dataPass;
-        console.log("products", products);
     });
 
     getTypes().then((dataPass)  => {
         types = dataPass;
-        console.log("types", types);
     });
-
-
 });
