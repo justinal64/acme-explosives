@@ -3,7 +3,7 @@
 
 
 ## Description
-In this project I used promises to make 3 xhhr requests.
+In this project I used promises to make 3 xhr requests.
 
 
 ## How to run
